@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photoshop</title>
+  <!-- 使用 bootstrap5 的 css -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- 使用 bootstrap5 的 icon -->
+  <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+  <!-- lightgallery.js v1.6.6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.6/css/lightgallery.min.css" rel="stylesheet" />
+  <style>
+    .img-title {
+      height: auto;
+      width: 90%;
+    }
+    @media (min-width: 768px) {
+      .img-title {
+        height: 120px;
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container d-flex flex-column vh-100 vw-100">
+    <h1 class="w-100 text-center mt-5"><img class="img-title" src="./title.png"></h1>
+    <div class="row-project row mt-5">
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card text-dark bg-light mb-5">
+          <div class="card-header fw-bolder">banner 作品一</div>
+          <div id="example" class="card-body">
+            <a href="./img-b/banner-black friday.jpg">
+              <img src="./img-b/banner-black friday.jpg" class="card-img-bottom" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card text-dark bg-light mb-5">
+          <div class="card-header fw-bolder">banner 作品二</div>
+          <div class="card-body">
+            <a href="./img-b/banner_sea food.jpg">
+              <img src="./img-b/banner_sea food.jpg" class="card-img-bottom" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card text-dark bg-light mb-5">
+          <div class="card-header fw-bolder">banner 作品三</div>
+          <div class="card-body">
+            <a href="./img-b/banner_招生.jpg">
+              <img src="./img-s/banner_招生_s.jpg" class="card-img-bottom" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card text-dark bg-light mb-5">
+          <div class="card-header fw-bolder">月曆製作</div>
+          <div class="card-body">
+            <a href="./img-b/2022月曆.jpg">
+              <img src="./img-s/2022月曆_s.jpg" class="card-img-bottom" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- jQuery v1.9.1 -->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- 使用 bootstrap5 的 js -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.6/js/lightgallery.min.js"></script>
+  <script>
+    $('.card-body').lightGallery({
+      download: false
+    }); 
+  </script>
+</body>
+</html>
